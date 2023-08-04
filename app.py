@@ -308,7 +308,7 @@ class Visuals(Thread):
                     y1 = relative_distance1 * math.cos(m1[1]) + self.h
                     # measure the distance between measurement 1 and measurement 2
                     distance = math.sqrt((x-x1)**2 + (y-y1)**2)
-                    # if the distance is less than 100 then we can draw a line connecting these two measurements
+                    # if the distance is less than 50 then we can draw a line connecting these two measurements
                     if distance < 50:
                         pygame.draw.line(screen, self.RED, [x,y], [x1,y1], 2)
                 except:
